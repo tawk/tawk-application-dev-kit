@@ -335,3 +335,11 @@ Images (logos, screenshots, installation guides) must be stored locally relative
 -   **`resources`**: (Optional) Array of objects for external links.
     -   `label`: Link text.
     -   `url`: External URL.
+
+## Submission
+
+Once your application is ready for review:
+
+1.  Zip your application folder (containing `app.js`, `metadata.json`, and the `assets` folder).
+2.  Send the zip file to your tawk.to Point of Contact (PIC).
+3.  Our team will review your configuration and schemas, and provide feedback on the next steps for publishing.
