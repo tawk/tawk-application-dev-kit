@@ -1,0 +1,52 @@
+{
+	"content" : {
+		"logoImage" : {
+			"type" : "asset",
+			"src" : "/images/logos/MCP.svg"
+		},
+		"shortDescription" : "Connect to any MCP server by providing its URL and authentication details.",
+		"vendor" : {
+			"name" : "tawk.to"
+		},
+		"overview" : {
+			"content" : "Connect tawk.to to any MCP Server (Model Context Protocol) to surface dynamic, session-level context inside chats — from user attributes to recent interactions — so agents and automations always have the right information at the right time. Provide faster, more accurate responses, reduce friction in support flows, and enable richer automated actions by passing authenticated context to and from your model backend. Install by entering your MCP Server URL and authentication details (API key, bearer token, or custom headers). Once connected, tawk.to will securely exchange session context with your MCP implementation and surface relevant data inside the chat panel and automation rules — no heavy development work required. <h3>Key Benefits</h3><ul><li>Deliver context-aware support with up-to-date session data.</li><li>Reduce repetitive questions by exposing user state and history.</li><li>Power smarter automations and routing using model-provided signals.</li><li>Secure, authenticated connections using API keys, tokens, or headers.</li><li>Easy integration: enter URL and authentication, and toggle which context fields to share.</li><li>Improve resolution times and agent productivity.</li><li>Keep control with configurable privacy and data scoping per property.</li></ul>",
+			"carouselImages" : [
+				{
+					"type" : "asset",
+					"src" : "/images/overview/MCP/MCP-1.jpg"
+				},
+				{
+					"type" : "asset",
+					"src" : "/images/overview/MCP/MCP-2.jpg"
+				},
+				{
+					"type" : "asset",
+					"src" : "/images/overview/MCP/MCP-3.jpg"
+				}
+			]
+		},
+		"installation" : [
+			{
+				"title" : "Install Custom MCP Server",
+				"description" : ""
+			},
+			{
+				"title" : "Step 1: Find and install the Custom MCP Server",
+				"description" : "In the catalog, locate Custom MCP Server and click Install."
+			},
+			{
+				"title" : "Step 2: Enter the server URL",
+				"description" : "Provide the base URL of your MCP server."
+			},
+			{
+				"title" : "Step 3: Choose authentication method",
+				"description" : "Select Basic, Bearer, or Custom Headers, and enter the required credentials."
+			},
+			{
+				"title" : "Step 4: Save and verify",
+				"description" : "Click Save to verify and establish the connection."
+			}
+		],
+		"resources" : []
+	}
+}

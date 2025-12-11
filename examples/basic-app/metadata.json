@@ -1,0 +1,35 @@
+{
+	"content" : {
+		"shortDescription" : "A basic example integration.",
+		"vendor" : {
+			"name" : "Example Vendor"
+		},
+		"logoImage" : {
+			"type" : "asset",
+			"src" : "/images/logos/basic.svg"
+		},
+		"overview" : {
+			"content" : "<p>This is a basic integration example.</p>",
+			"carouselImages" : [
+				{
+					"type" : "asset",
+					"src" : "/images/overview/basic-1.jpg"
+				}
+			]
+		},
+		"installation" : [
+			{
+				"title" : "Step 1",
+				"description" : "Configure the application.",
+				"images" : [
+					{
+						"type" : "asset",
+						"src" : "/images/installation/step-1.jpg"
+					}
+				]
+			}
+		],
+		"resources" : []
+	}
+}
+
