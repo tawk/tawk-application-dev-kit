@@ -5,6 +5,14 @@ This guide explains how to create custom integration applications for the tawk.t
 1.  **`app.js`**: Defines the application's behavior, configuration schema, and authentication methods.
 2.  **`metadata.json`**: Provides the content, text, and assets for the application's catalog listing.
 
+## Setup
+
+To use the validation tools included in this kit, install the development dependencies:
+
+```bash
+npm install
+```
+
 ## 1. Application Logic (`app.js`)
 
 The `app.js` file is the core of your integration. It must export a class that extends one of the provided base classes.
@@ -49,10 +57,7 @@ class MyCustomApp extends App {
     /**
      * features: Capabilities the app provides.
      * Available values:
-     * - 'channel': Provides a messaging channel (e.g. WhatsApp)
-     * - 'toolkit': Exposes tools for AI/Automation (used by McpApp)
-     * - 'sidebar-tab': Adds a tab to the sidebar
-     * - 'widget-installer': Installs the chat widget on a site
+     * - 'toolkit': Exposes tools for AI/Automation
      */
     static features = ['toolkit'];
 
@@ -335,6 +340,34 @@ Images (logos, screenshots, installation guides) must be stored locally relative
 -   **`resources`**: (Optional) Array of objects for external links.
     -   `label`: Link text.
     -   `url`: External URL.
+
+## 3. Testing Your Application
+
+The Application Dev Kit includes a test suite to validate your application's structure and ensure it complies with the platform's requirements before submission.
+
+### Running Validation Tests
+
+To test your application, run the following command from the root of the Dev Kit:
+
+```bash
+npm test -- --dir path/to/your/app
+```
+
+**Example:**
+```bash
+npm test -- --dir examples/basic-app
+```
+
+### What This Tests
+
+The test suite performs a static analysis and contract check of your `app.js` file:
+*   **Structure**: Verifies that your app extends the provided base classes correctly.
+*   **Metadata**: Checks that all required static properties (`name`, `categories`, `features`) are present and have the correct data types.
+*   **Schemas**: Validates that `configSchema` and `authSchemas` are valid JSON objects.
+*   **Methods**: Ensures required lifecycle methods (`getClient`, `getTools`) are defined.
+
+**Note on Imports:**
+The test environment automatically creates aliases for the platform modules. You can leave your `require('@apps/domain/entities/app')` statements as-is; they will resolve correctly during local testing.
 
 ## Submission
 

@@ -1,0 +1,20 @@
+{
+  "name": "application-dev-kit",
+  "version": "1.0.0",
+  "description": "This guide explains how to create custom integration applications for the tawk.to platform. An application consists of two main files that reside in the same directory:",
+  "main": "app.spec.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_PATH=./test/fixtures npx mocha \"test/**/*.spec.js\" --"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^11.7.5",
+    "should": "^13.2.3"
+  }
+}
